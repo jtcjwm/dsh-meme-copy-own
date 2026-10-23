@@ -27,7 +27,8 @@
     "README.md",
     "tests",
     "locale",
-    "icon.png"
+    "icon.png",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {
