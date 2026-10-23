@@ -1,0 +1,54 @@
+{
+  "name": "dsh-meme-copy-own",
+  "version": "0.1.0",
+  "description": "给 DSH 聊天里的表情包加一个「复制图片」按钮：点一下进剪贴板，到微信/QQ 等软件里 Ctrl+V 即可发送",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-meme",
+    "clipboard"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "tests",
+    "locale",
+    "icon.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtcjwm/dsh-meme-copy-own.git"
+  },
+  "homepage": "https://github.com/jtcjwm/dsh-meme-copy-own#readme",
+  "bugs": {
+    "url": "https://github.com/jtcjwm/dsh-meme-copy-own/issues"
+  },
+  "author": "jtcjwm",
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

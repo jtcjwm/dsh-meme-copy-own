@@ -1,0 +1,15 @@
+# ============================================================================
+# dsh-meme-copy-own —— DSH bundle patch
+# ============================================================================
+# 把本插件插入目标 profile 的配置树。id 必须与包名一致（ModuleLoader 按 entry 名核对）。
+#
+# 安装：profile 的 package.json 里加
+#   "dsh-meme-copy-own": "link:D:/DSH/plugins/dsh-meme-copy-own"
+# 并把 "dsh-meme-copy-own" 加进 dsh.profile.bundles，然后重启 DSH 桌面端。
+#
+# 宿主半边不做任何事；功能全在浏览器半边（包装 dsh-meme 注入的 img[data-meme-img]）。
+# ============================================================================
+
+- insert:
+    - id: dsh-meme-copy-own
+      name: dsh-meme-copy-own
