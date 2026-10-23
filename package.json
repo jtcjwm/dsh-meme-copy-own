@@ -1,7 +1,7 @@
 {
   "name": "dsh-meme-copy-own",
-  "version": "0.1.0",
-  "description": "给 DSH 聊天里的表情包加一个「复制图片」按钮：点一下进剪贴板，到微信/QQ 等软件里 Ctrl+V 即可发送",
+  "version": "0.1.1",
+  "description": "给已安装 dsh-meme 的 DSH 聊天加一个「复制图片」按钮（配套插件，需配合 dsh-meme 使用）",
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -51,5 +51,10 @@
   "author": "jtcjwm",
   "engines": {
     "node": ">=22.13.0"
+  },
+  "dshCompanion": {
+    "name": "dsh-meme",
+    "required": true,
+    "note": "本插件只包装 dsh-meme 注入的 img[data-meme-img] 与 .mp-cell，没有它不产生可见效果"
   }
 }
